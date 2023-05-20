@@ -1,0 +1,31 @@
+{
+  "name": "DJANGO DEMO",
+  "files":[
+    {
+      "directory": "./",
+      "filters": [
+        "*.*"
+      ],
+      "exclude_patterns": [
+        "__pycache__",
+        ".vscode",
+        ".idea",
+        ".kate",
+        ".gitignore",
+        ".gitattributes",
+        ".editorconfig",
+        ".hidden",
+        ".icon.png",
+        ".directory",
+        "build"
+      ],
+      "recursive": 1
+    }
+  ],
+  "build": {
+      "directory": "build",
+      "build": "",
+      "clean": "",
+      "quick": ""
+  }
+}
