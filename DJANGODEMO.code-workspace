@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"python.envFile": "/opt/frameworks/python/venvs/django/pyvenv.cfg",
+		"python.defaultInterpreterPath": "/opt/frameworks/python/venvs/django/bin/python"
+	}
+}

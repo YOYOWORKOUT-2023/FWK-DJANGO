@@ -1,0 +1,42 @@
+{# ========================================================================== #}
+{#                           QUASAR DEMO SIMPLE                               #}
+{# ========================================================================== #}
+
+{% extends 'quasar/base.html' %}
+{% load static %}
+
+
+{% block title %}
+    Quasar demo button
+{% endblock %}
+
+
+
+{% block main %}
+<h1>buttons</h1>
+<hr/>
+<div id="q-app">
+<q-btn style="background: #FF0080; color: white" label="Fuchsia" />
+</div>
+{% endblock %}
+
+
+{% block vue %}
+<script>
+
+    const app = Vue.createApp({
+    setup () {
+        return {}
+    }
+    })
+
+    app.use(Quasar, {
+    config: QUASAR_CONFIG
+    })
+    Quasar.lang.set(Quasar.lang.fr)
+    Quasar.iconSet.set(Quasar.iconSet.materialIconsOutlined)
+
+    app.mount('#q-app')
+</script>
+{% endblock %}
+

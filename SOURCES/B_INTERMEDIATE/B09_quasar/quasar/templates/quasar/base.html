@@ -1,0 +1,71 @@
+{# ========================================================================== #}
+{#                           QUASAR BASE TEMPLATE                             #}
+{# ========================================================================== #}
+
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- ====================================================================== -->
+<!-- ================================ HEAD ================================ -->
+<!-- ====================================================================== -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+          content="">
+
+    <title>
+    {% block title %}{% endblock %}
+    </title>
+
+<!-- ====================================================================== -->
+<!-- STYLES                                                                 -->
+<!-- ====================================================================== -->
+    <link href="{% static 'vendors/google/fonts/roboto/roboto.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'vendors/animate/css/animate.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'vendors/quasar/css/quasar.css' %}" rel="stylesheet" type="text/css">
+
+</head>
+<!-- ====================================================================== -->
+<!-- ================================ BODY ================================ -->
+<!-- ====================================================================== -->
+<body>
+
+<main>
+{% block main %}{% endblock %}
+</main>
+
+
+
+
+
+<!-- ====================================================================== -->
+<!--                               SCRIPTS                                  -->
+<!-- ====================================================================== -->
+<script src="{% static 'vendors/vue/js/vue.global.prod.js' %}"></script>
+<script src="{% static 'vendors/quasar/js/quasar.umd.prod.js' %}"></script>
+<script src="{% static 'vendors/quasar/js/lang/fr.umd.prod.js' %}"></script>
+<script src="{% static 'vendors/quasar/js/icon-set/material-icons-outlined.umd.prod.js' %}"></script>
+
+<script>
+    const QUASAR_CONFIG = {
+        brand: {
+            primary: '#e46262',
+            // ... or all other brand colors
+        },
+        notify: {}, // default set of options for Notify Quasar plugin
+        loading: {}, // default set of options for Loading Quasar plugin
+        loadingBar: {}, // settings for LoadingBar Quasar plugin
+    }
+</script>
+
+{% block vue %}{% endblock %}
+
+<!-- ====================================================================== -->
+<!-- ================================ HTML ================================ -->
+<!-- ====================================================================== -->
+</body>
+</html>

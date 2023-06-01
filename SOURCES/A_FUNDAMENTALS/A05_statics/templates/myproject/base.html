@@ -1,0 +1,42 @@
+{# ========================================================================= #}
+{#                               BASE TEMPLATE                               #}
+{# ========================================================================= #}
+
+{% load static %}
+
+
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" type="image/png" href="{% static 'myproject/img/favicon.ico' %}" />
+    <link rel="stylesheet" href="{% static 'myproject/css/myproject.css' %}" />
+
+    <title>{% block title %}OMG ...{% endblock %}</title>
+
+</head>
+<!-- ====================================================================== -->
+<!-- ================================ BODY ================================ -->
+<!-- ====================================================================== -->
+<body>
+<main>
+    {% block main %}
+    {% endblock %}
+</main>
+
+
+
+
+{% block javascript %}
+    <script src="{% static 'myproject/js/myproject.js' %}"></script>
+{% endblock %}
+
+<!-- ====================================================================== -->
+<!-- ================================ END  ================================ -->
+<!-- ====================================================================== -->
+</body>
+</html>
